@@ -1,7 +1,12 @@
 import altair as alt
 from sim import simulate
 
-source = simulate(100, 1, 100, 200)
+generations = 100
+doves = 1
+hawks = 1
+foods = 300
+
+source = simulate(generations, doves, hawks, foods)
 
 chart = alt.Chart(source).mark_area().encode(
     x="Generation:O",

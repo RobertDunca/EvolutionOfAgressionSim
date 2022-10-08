@@ -157,8 +157,10 @@ def simulate(generations, num_of_doves, num_of_hawks, num_of_food):
         
     return data
 
+# TRANSFORM DATA IN A PANDAS DATAFRAME
+
 def transform_data(generation_num, doves, hawks):
-    category = 'Dove' * len(doves) + 'Hawk' * len(hawks)
+    category = ['Dove'] * len(doves) + ['Hawk'] * len(hawks)
     population = doves + hawks
         
     data = pd.DataFrame({'Generation': (generation_num)*2, 
