@@ -3,18 +3,6 @@ import random
 import pandas as pd
 
 
-# This simulation is showing the evolution of aggression over multiple generations
-
-# - the simulation starts with a desired amount of food and population size
-# - in each generation a creature randomly choses a food object
-# - a food object has 2 pieces of food
-# - if two creatures chose the same food object, they share the 2 food pieces 
-# and they live until next generation
-# - if a creature is the only one choosing one food object it will eat both pieces 
-# and it will reproduce: it lives until the next generation and
-# a new creature is added to th next generation
-# - if there are creatures which didn't eat but there is no food left, they will die
-
 class Food:
     def __init__(self):
         self.food_amount = 2
