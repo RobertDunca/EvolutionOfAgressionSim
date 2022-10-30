@@ -12,7 +12,6 @@ class Food:
 class Creature:
     def __init__(self):
         self.food_count = 0
-        self.type = 'Creature'
         
     def choose_food(self, food):
         food.creatures_eating.append(self)
@@ -24,7 +23,6 @@ class Creature:
 class Dove(Creature):
     def __init__(self):
         super().__init__()
-        self.type = 'Dove'
  
     def eat(self, food):
         if len(food.creatures_eating) == 1:
@@ -45,7 +43,6 @@ class Dove(Creature):
 class Hawk(Creature):
     def __init__(self):
         super().__init__()
-        self.type = 'Hawk'
     
     def eat(self, food):
         if len(food.creatures_eating) == 1:

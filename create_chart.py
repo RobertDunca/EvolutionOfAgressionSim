@@ -1,10 +1,10 @@
 import altair as alt
 from sim import simulate
 
-generations = 100
-doves = 1
-hawks = 1
-foods = 300
+generations = int(input("How many GENERATIONS do you want the simulation to have? "))
+doves = int(input("What should the DOVE population be? "))
+hawks = int(input("What should the HAWK population be? "))
+foods = int(input("How much FOOD do you want to create? "))
 
 source = simulate(generations, doves, hawks, foods)
 
